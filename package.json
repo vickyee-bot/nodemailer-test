@@ -4,8 +4,8 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "nodemon src/app.ts",
-    "build": "tsc",
-    "start": "node dist/server.js"
+    "build": "tsc && nxpx prisma generate",
+    "start": "node dist/app.js"
   },
   "dependencies": {
     "@prisma/client": "^6.19.0",
